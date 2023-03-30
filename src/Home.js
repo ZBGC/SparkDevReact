@@ -7,31 +7,27 @@ import Gallery from './components/gallery';
 function App() {
   return (
     <BrowserRouter>
-    <div id="home" className='text-center'>
+    <div id="home">
       <div>
-        {/* Hover: */}
-      {/* transform h-64 bg-blue-400 w-80 transition duration-500 hover:scale-125 hover:bg-blue-600 flex justify-center items-center */}
-      <nav className=' w-full flex justify-center space-x-5 text-center'> 
-        <ul class>
-          <li>
-            <Link to="/contact" className='transform transition duration-500 hover:scale-125 flex justify-center items-center'> Contact </Link>
+  
+      <nav> 
+        <ul class = "navbar" >
+          <li class = "nav">
+            <Link to="/contact" >Contact </Link>
           </li>
-          <li> 
-            <Link to="/About" className='transform transition duration-500 hover:scale-125 flex justify-center items-center'> About </Link>
+          <li class = "nav"> 
+            <Link to="/About"> About </Link>
           </li>
-          <li>
-            <Link to='/gallery' className='transform transition duration-500 hover:scale-125 flex justify-center items-center'> Gallery </Link>
+          <li class = "nav">
+            <Link to='/gallery' > Gallery </Link>
           </li>
-          <li>
-            <Link to ='/download' className='transform transition duration-500 hover:scale-125 flex justify-center items-center'> Download </Link>
+          <li class = "nav">
+            <Link to ='/download' > Download </Link>
           </li>
           
         </ul>
       </nav>
     
-        <img src={Photo} className = "relative w-full bg-no-repeat bg-cover bg-center bg-fixed " >
-          
-        </img>
    
       </div>
       </div>
