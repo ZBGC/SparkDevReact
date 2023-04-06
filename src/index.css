@@ -2,18 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-
-body{
+@layer base{
+  body { 
+    background-color: gainsboro;
+  }
+}
+#image{
     margin: 0;
     padding: 0;
     background-size:cover;
     background-image: url(./Images/Photo.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position: center;
-
-
-    
+    height: 90%;
+    width: 100%;
 
   }
   
@@ -50,4 +51,27 @@ li{
   }
   
 
-  
+  #Gallery{
+    top: 30%;
+
+
+  }
+  #About{
+    top : 30%
+  }
+
+  #Download {
+    top: 30%
+  }
+
+  #Contact {
+    top: 30%
+  }
+
+
+
+
+
+  nioegnweoi {
+    
+  }
