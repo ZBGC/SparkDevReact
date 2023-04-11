@@ -1,0 +1,12 @@
+#aComp{
+    background-color: #ac9020;
+    border-radius: 10%;
+    border: 1rem solid white;
+    line-height: 3rem;
+    font-weight: bold;
+}
+
+#logos{
+    margin: auto;
+    max-width: 30%;
+}
