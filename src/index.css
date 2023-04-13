@@ -2,20 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-
-body{
-    margin: 0;
-    padding: 0;
-    background-size:cover;
-    background-image: url(./Images/Photo.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-
-
+@layer base{
+  body { 
+    background-color: #081E3F ;
+    color: white;
+    margin: auto;
+    font-family: 'Play', sans-serif;
     
-
   }
+}
+
   
   
 li{
@@ -30,9 +26,6 @@ li{
 
     display: grid;
     justify-items: center;
-  
-
-  
   }
   
   .nav:hover{
@@ -50,4 +43,73 @@ li{
   }
   
 
+  #Gallery{
+    top: 30%;
+
+
+  }
+  #About{
+    top : 30%
+  }
+
+  #Download {
+    top: 30%
+  }
+
+  #Contact {
+    top: 30%
+  }
   
+#navBar {
+  position: sticky;
+}
+
+#headings{
+ padding: 4%;
+ font-family: 'Play', sans-serif;
+ font-weight: bolder;
+ font-size: 110px;
+ background-color: #0a2650;
+ margin-top: 3rem;
+ margin-bottom: 3rem;
+}
+
+body{
+  background-color: #081E3F;
+  
+}
+
+
+.trailer{
+
+  font-family: 'Play', sans-serif;
+  border-style: round;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: white;
+  font-size: 70px;
+  padding: 12px 24px;
+  border: 7px solid white;
+  cursor: pointer;
+  border-radius: 60px;
+  background-color: transparent;
+
+  
+}
+.trailer:hover{
+  border: 7px solid #081E3F;
+color: #081E3F;
+background-color: white;
+}
+#video{
+  position: relative;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  min-width: 100vh;
+  opacity: 0.6;
+}
+
